@@ -1,11 +1,13 @@
 import React from "react";
-import MaterialTable from "material-table";
+// import MaterialTable from "material-table";
+import Employees from "../utils/employees";
+
 
 function EmployeeTable(props) {
     
   return (
-    <div className="container">
-      <MaterialTable
+    <div>
+      {/* <MaterialTable
         columns={[
           { title: "User ID", field: "id" },
           { title: "First Name", field: "firstName" },
@@ -14,10 +16,10 @@ function EmployeeTable(props) {
           { title: "Phone", field: "phone" },
           { title: "Department", field: "department" },
         ]}
-        data={props.employees}
+        data={Employees}
         title="Employee Directory"
-      />
-      {/* <div className="card">
+      /> */}
+      <div className="card">
         <table>
           <thead>
             <tr>
@@ -29,7 +31,7 @@ function EmployeeTable(props) {
               <th>Department</th>
             </tr>
           </thead>
-          {props.employees.map((e) => (
+          {Employees.map((e) => (
             <tbody>
               <tr key={e.id}>
                 <td>{e.id}</td>
@@ -42,7 +44,7 @@ function EmployeeTable(props) {
             </tbody>
           ))}
         </table>
-      </div> */}
+      </div>
     </div>
   );
 }
