@@ -11,13 +11,9 @@ function SearchForm(props){
           list="term"
           type="text"
           className="form-control"
-          placeholder="{props.worker}"
+          placeholder="filter by first name"
           id="term"
         />
-        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
-          Search
-        </button>
-        {/* <h1>{props.findEmployees}</h1> */}
       </div>
     </form>
     );
