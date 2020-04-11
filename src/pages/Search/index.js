@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Employees from "../../utils/employees";
 import SearchForm from "../../components/SearchForm/search";
 import EmployeeTable from "../../components/table";
@@ -8,6 +8,9 @@ import NavBar from "../../components/navbar";
 export default function Search() {
   const [search, setSearch] = useState("");
   const [sortedField, setSortedField] = useState("");
+
+  useEffect(() => {
+    document.title = "C@rr0t Co. - Employee Directory";})
   
   // filter employees when typing in search bar
   const findEmployees = Employees.filter((e) => {
