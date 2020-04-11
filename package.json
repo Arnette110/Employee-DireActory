@@ -2,6 +2,7 @@
   "name": "employee-directory-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://arnette110.github.io/Employee-DireActory/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -12,9 +13,13 @@
     "material-table": "1.57.2",
     "@material-ui/core": "4.9.9"
   },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
