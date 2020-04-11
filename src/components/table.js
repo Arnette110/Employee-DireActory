@@ -7,16 +7,58 @@ function EmployeeTable(props) {
       <table>
         <thead>
           <tr>
-            <th>User ID</th>
+            {/* table columns with buttons to sort by ascending of desceding order */}
             <th>
-              First Name <button className="btn grey darken-4" onClick={props.handleSortBtn}><i className="material-icons">unfold_more</i></button>
+              User ID{" "}
+              <button
+                className="btn grey darken-4"
+                onClick={() => props.handleSortBtn("id")}
+              >
+                <i className="material-icons">unfold_more</i>
+              </button>
             </th>
-            <th>Last Name</th>
-            <th>E-mail</th>
-            <th>Phone</th>
-            <th>Department</th>
+            <th>
+              First Name{" "}
+              <button
+                className="btn grey darken-4"
+                onClick={() => props.handleSortBtn("firstName")}
+              >
+                <i className="material-icons">unfold_more</i>
+              </button>
+            </th>
+            <th>
+              Last Name{" "}
+              <button
+                className="btn grey darken-4"
+                onClick={() => props.handleSortBtn("lastName")}
+              >
+                <i className="material-icons">unfold_more</i>
+              </button>
+            </th>
+            <th>
+              E-mail
+            </th>
+            <th>
+              Phone{" "}
+              <button
+                className="btn grey darken-4"
+                onClick={() => props.handleSortBtn("phone")}
+              >
+                <i className="material-icons">unfold_more</i>
+              </button>
+            </th>
+            <th>
+              Department{" "}
+              <button
+                className="btn grey darken-4"
+                onClick={() => props.handleSortBtn("department")}
+              >
+                <i className="material-icons">unfold_more</i>
+              </button>
+            </th>
           </tr>
         </thead>
+        {/* loop through Employees and map to table */}
         {props.Employees.map((e) => (
           <tbody key={e.id}>
             <tr>
