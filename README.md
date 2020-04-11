@@ -4,10 +4,9 @@
 
 This application loads a company employee directory as a table. The user is able to type in the search bar and lookup an employee and sort the contents of the table in ascending or descending order.
 
-## URL to application on Heroku
+## URL to application
 
-
-
+https://arnette110.github.io/Employee-DireActory/
 
 ## Instructions
 
