@@ -104,6 +104,14 @@ const Employees = [
     phone: "801-555-4532",
     department: "Maintenance",
   },
+  {
+    id: 14,
+    firstName: "Avie",
+    lastName: "Sakrison",
+    email: "test14@test.com",
+    phone: "801-123-4567",
+    department: "CEO",
+  },
 ];
 
 export default Employees
