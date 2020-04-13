@@ -25,7 +25,7 @@ The user can also sort the tables contents by column in ascending or descending 
 ## Built With
 
 * React
-* Materialize
+* Bulma
 * HTML/CSS/JavaScript
 
 ## License
