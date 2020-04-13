@@ -1,59 +1,70 @@
 import React from "react";
 
-
 function EmployeeTable(props) {
   return (
-    <div className="card">
-      <table>
+    <div className="card table-container">
+      <table className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
         <thead>
           <tr>
             {/* table columns with buttons to sort by ascending of desceding order */}
             <th>
-              User ID{" "}
               <button
-                className="btn grey darken-4"
+                className="button"
                 onClick={() => props.handleSortBtn("id")}
               >
-                <i className="material-icons">unfold_more</i>
+                <span className="has-text-weight-bold">User ID</span>
+                <span className="icon is-small">
+                  <i className="fas fa-arrows-alt-v"></i>
+                </span>
               </button>
             </th>
-            <th>
-              First Name{" "}
+            <th className="control">
               <button
-                className="btn grey darken-4"
+                className="button"
                 onClick={() => props.handleSortBtn("firstName")}
               >
-                <i className="material-icons">unfold_more</i>
+                <span className="has-text-weight-bold">First Name</span>
+                <span className="icon is-small">
+                  <i className="fas fa-arrows-alt-v"></i>
+                </span>
               </button>
             </th>
             <th>
-              Last Name{" "}
               <button
-                className="btn grey darken-4"
+                className="button"
                 onClick={() => props.handleSortBtn("lastName")}
               >
-                <i className="material-icons">unfold_more</i>
+                <span className="has-text-weight-bold">Last Name</span>
+                <span className="icon is-small">
+                  <i className="fas fa-arrows-alt-v"></i>
+                </span>
               </button>
             </th>
             <th>
-              E-mail
+              <button className="button">
+                <span className="has-text-weight-bold">E-mail</span>
+              </button>
             </th>
             <th>
-              Phone{" "}
               <button
-                className="btn grey darken-4"
+                className="button"
                 onClick={() => props.handleSortBtn("phone")}
               >
-                <i className="material-icons">unfold_more</i>
+                <span className="has-text-weight-bold">Phone</span>
+                <span className="icon is-small">
+                  <i className="fas fa-arrows-alt-v"></i>
+                </span>
               </button>
             </th>
             <th>
-              Department{" "}
               <button
-                className="btn grey darken-4"
+                className="button"
                 onClick={() => props.handleSortBtn("department")}
               >
-                <i className="material-icons">unfold_more</i>
+                <span className="has-text-weight-bold">Department</span>
+                <span className="icon is-small">
+                  <i className="fas fa-arrows-alt-v"></i>
+                </span>
               </button>
             </th>
           </tr>

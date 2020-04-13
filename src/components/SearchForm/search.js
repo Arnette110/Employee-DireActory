@@ -1,22 +1,22 @@
 import React from "react";
 
-function SearchForm(props){
-    return (
-      <form className="search">
-      <div className="input-field">
+function SearchForm(props) {
+  return (
+    <div className="field">
+      <div className="control">
         <input
           value={props.search}
           onChange={props.handleInputChange}
           name="term"
           list="term"
           type="text"
-          className="form-control"
-          placeholder="filter by first name"
+          className="input"
+          placeholder="filter by column"
           id="term"
         />
       </div>
-    </form>
-    );
+    </div>
+  );
 }
 
 export default SearchForm;
