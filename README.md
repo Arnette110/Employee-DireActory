@@ -20,7 +20,7 @@ The user can also sort the tables contents by column in ascending or descending 
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/54122844/79054963-7dc60980-7c06-11ea-8588-83542b9cef3d.png)
+![image](https://user-images.githubusercontent.com/54122844/79157379-b47c5b00-7d91-11ea-93d8-62a9b0f12e29.png)
 
 ## Built With
 
