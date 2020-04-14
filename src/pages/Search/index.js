@@ -31,11 +31,8 @@ export default function Search() {
 
   // sort columns button function
   const handleSortBtn = (key) => {
-   
-    
     let direction = 'ascending';
 
-    
     if (
       sortedField &&
       sortedField.key === key &&
@@ -45,27 +42,21 @@ export default function Search() {
     }
     setSortedField({ key, direction });
     
-    
-   
     if(sortedField !== null) {
-      
       // sort Employees by property key that will be passed in on the button click in table.js
       Employees.sort((a, b) => {
-        
         if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key))return 0;
-        
-       const compA = (typeof a[key] === 'string') ? a[key].toLowerCase() : a[key]
-       const compB = (typeof b[key] === "string") ? b[key].toLowerCase() : b[key];
-       let comparison = 0
-       if (compA > compB) {
-         comparison = 1
-       } else if (compA < compB) {
-         comparison = -1
-       }
-       return(
+        const compA = (typeof a[key] === 'string') ? a[key].toLowerCase() : a[key]
+        const compB = (typeof b[key] === "string") ? b[key].toLowerCase() : b[key];
+        let comparison = 0
+        if (compA > compB) {
+          comparison = 1
+        } else if (compA < compB) {
+          comparison = -1
+        }
+        return(
          direction === 'ascending' ? (comparison * 1) : -1
-       )
-      
+        )
       });
     }
   };
